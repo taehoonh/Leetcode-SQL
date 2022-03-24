@@ -4,4 +4,4 @@ from Actions
 where action = 'report' and
     action_date = '2019-07-04' 
 group by extra
-order by report_reason
+order by report_reason;
