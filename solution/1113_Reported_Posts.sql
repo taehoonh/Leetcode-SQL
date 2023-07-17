@@ -1,7 +1,12 @@
-select extra as report_reason, 
-    count(distinct post_id) as report_count
-from Actions
-where action = 'report' and
-    action_date = '2019-07-04' 
-group by extra
-order by report_reason;
+SELECT
+	extra AS report_reason,
+	count(DISTINCT post_id) AS report_count
+FROM
+	Actions
+WHERE
+	ACTION = 'report'
+	AND action_date = '2019-07-04'
+GROUP BY
+	extra
+ORDER BY
+	report_reason;
